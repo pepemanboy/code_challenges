@@ -22,5 +22,5 @@ For every pair of points (p1,p2) that satisfies that (p2.x >= p1.x && p2.y > p1.
 
 Every pair of points whose vector and orthogonal_y_intercept is equal to an existing one, will form a new rectangle...
 
-See implementation in [rectangle_mania.cpp](https://github.com/pepemanboy/code_challenges/rectangle_mania/rectangle_mania.cpp)
+See implementation in [rectangle_mania.cpp](https://github.com/pepemanboy/code_challenges/blob/master/rectangle_mania/rectangle_mania.cpp)
 
