@@ -16,11 +16,22 @@ Here I propose a simpler solution for O(n^2) time. (Actually O(n^2 log(n)) for m
 
 ## Solution
 
-For every pair of points (p1,p2) that satisfies that (p2.x >= p1.x && p2.y > p1.y), calculate the following:
+We define an Edge data structure of the form Edge{vector v, double orthogonal_y_intercept}. This image describes how to calculate the vector and the orthogonal_y_intercept values.
 
 ![Algorithm for rectangle mania](https://github.com/pepemanboy/code_challenges/blob/master/rectangle_mania/img/algorithm.PNG)
 
 Every pair of points whose vector and orthogonal_y_intercept is equal to an existing one, will form a new rectangle...
+
+So... 
+
+We have a map m with Edge keys, and int values.
+
+We initialize answer to 0.
+
+For every pair of points (p1,p2) that satisfy  (p2.x >= p1.x && p2.y > p1.y):
+- calculate their Edge e.
+- answer += m[e]
+- m[e]++
 
 See implementation in [rectangle_mania.cpp](https://github.com/pepemanboy/code_challenges/blob/master/rectangle_mania/rectangle_mania.cpp)
 
