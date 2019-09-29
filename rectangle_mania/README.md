@@ -18,7 +18,7 @@ Here I propose a simpler solution for O(n^2) time. (Actually O(n^2 log(n)) for m
 
 For every pair of points (p1,p2) that satisfies that (p2.x >= p1.x && p2.y > p1.y), calculate the following:
 
-![Algorithm for rectangle mania](https://github.com/pepemanboy/code_challenges/rectangle_mania/img/algorithm.png)
+![Algorithm for rectangle mania](https://github.com/pepemanboy/code_challenges/blob/master/rectangle_mania/img/algorithm.PNG)
 
 Every pair of points whose vector and orthogonal_y_intercept is equal to an existing one, will form a new rectangle...
 
