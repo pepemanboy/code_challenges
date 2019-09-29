@@ -16,7 +16,9 @@ Here I propose a simpler solution for O(n^2) time. (Actually O(n^2 log(n)) for m
 
 ## Solution
 
-We define an Edge data structure of the form Edge{vector v, double orthogonal_y_intercept}. This image describes how to calculate the vector and the orthogonal_y_intercept values.
+We define an Edge data structure of the form Edge{vector v, double orthogonal_y_intercept}. 
+
+This image describes how to calculate the vector and the orthogonal_y_intercept values.
 
 ![Algorithm for rectangle mania](https://github.com/pepemanboy/code_challenges/blob/master/rectangle_mania/img/algorithm.PNG)
 
